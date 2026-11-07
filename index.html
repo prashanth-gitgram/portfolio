@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prashanth C · Backend Developer (PHP &amp; Laravel)</title>
+  <meta name="description" content="Prashanth C, backend developer specializing in PHP and Laravel. Phishing simulation, SOC 2 compliance and multi-application property platforms, built end to end." />
+  <meta property="og:title" content="Prashanth C · Backend Developer" />
+  <meta property="og:description" content="Backend developer specializing in PHP and Laravel, owning complex products end to end." />
+  <meta name="theme-color" content="#0b0f17" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Apply saved theme before paint to avoid a flash
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="top-nav">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" aria-label="Prashanth C, back to top"><span class="accent">&lt;</span>prashanth<span class="accent">/&gt;</span></a>
+      <nav aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch to light theme" title="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="grid-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="mono kicker"><span class="dot" aria-hidden="true"></span> Bangalore, India</p>
+          <h1>Prashanth C</h1>
+          <p class="role mono">Backend Developer <span class="accent">·</span> PHP &amp; Laravel</p>
+          <p class="tagline">I own complex products end to end, from architecture to production. Known for shipping fast, adopting new stacks with AI, and mentoring junior developers.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#contact">Contact me</a>
+            <a class="btn btn-ghost" id="resume-btn" href="assets/Prashanth_C_Resume.pdf" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4.5-4.5M12 15l4.5-4.5M4 19h16"/></svg>
+              Download Resume
+            </a>
+          </div>
+          <ul class="social" aria-label="Profiles">
+            <li><a href="mailto:prashanthmt2022@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg></a></li>
+            <li><a href="https://www.linkedin.com/in/1PrashanthC" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.06c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.13V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.95 1.32-1.95 2.69V21h-4z"/></svg></a></li>
+            <li class="gh-only" hidden><a class="gh-link" href="#" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg></a></li>
+          </ul>
+        </div>
+
+        <div class="terminal" role="img" aria-label="Terminal showing whoami: Prashanth C, backend developer working with PHP, Laravel and MySQL">
+          <div class="term-bar" aria-hidden="true">
+            <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+            <span class="term-title mono">~/prashanth — zsh</span>
+          </div>
+          <pre class="term-body mono" id="terminal" aria-hidden="true"></pre>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint mono" aria-label="Scroll to About">scroll ↓</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono num">01.</span> About</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>Backend developer specializing in <strong>PHP and Laravel</strong>, with a track record of owning complex products end to end, from architecture to production.</p>
+            <p>Built a <strong>phishing simulation platform</strong> from scratch, a <strong>SOC 2 compliance platform</strong> with Windows and Linux agents, and the <strong>entire backend of a multi-application property platform</strong> for a Dubai client.</p>
+            <p>Known for shipping fast, adopting new stacks with AI, and mentoring junior developers.</p>
+          </div>
+          <ul class="highlights reveal" aria-label="Highlights">
+            <li><span class="h-num mono">150+</span><span>sales leads and tender details delivered per day by an AI automation I built</span></li>
+            <li><span class="h-num mono">6–7</span><span>interconnected applications in the property platform backend I built</span></li>
+            <li><span class="h-num mono">3</span><span>junior developers interviewed and hired</span></li>
+            <li><span class="h-num mono">E2E</span><span>full release cycle owned (testing, deployment, production fixes) with no dedicated QA team</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono num">02.</span> Experience</h2>
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-card">
+              <p class="tl-date mono">Jul 2025 – Present</p>
+              <h3>Software Engineer Sr. Executive</h3>
+              <p class="tl-org">Succeed Technologies · Bangalore</p>
+              <ul class="bullets">
+                <li>Build and own the company's security, compliance, and marketing products in PHP and Laravel, handling the full release cycle (testing, deployment, and production fixes) with no dedicated QA team.</li>
+                <li>Built an AI-powered automation that delivers 150+ sales leads and tender details per day across 4 products to the sales team.</li>
+                <li>Built a Cursor extension that automates feature testing, and ran knowledge-sharing sessions to bring AI tools into the team's daily work.</li>
+                <li>Set up an in-house local server to host the company's development sites, reducing cloud hosting costs.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <div class="tl-card">
+              <p class="tl-date mono">Mar 2023 – Jun 2025</p>
+              <h3>Trainee Developer</h3>
+              <p class="tl-org">Zysk Technologies Pvt Ltd · Bangalore</p>
+              <ul class="bullets">
+                <li>Delivered backend development for client projects in Laravel, including the company's major international client project.</li>
+                <li>Interviewed and hired 3 junior developers, and trained and mentored new team members to get them productive on live projects.</li>
+                <li>Built Filament admin panels for clients, tested and documented APIs with Postman, and managed code on GitHub.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono num">03.</span> Projects</h2>
+        <p class="section-sub reveal">Click a project to see my responsibilities.</p>
+        <div class="filters reveal" role="group" aria-label="Filter projects by company">
+          <button class="chip-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip-btn" data-filter="succeed" aria-pressed="false">Succeed Technologies</button>
+          <button class="chip-btn" data-filter="zysk" aria-pressed="false">Zysk Technologies</button>
+        </div>
+        <div class="project-grid" id="project-grid"><!-- rendered by script.js --></div>
+        <noscript><p>Enable JavaScript to view the project cards.</p></noscript>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono num">04.</span> Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-group reveal"><h3 class="mono">languages</h3><ul class="tags"><li>PHP</li><li>SQL</li><li>Python (basic)</li></ul></div>
+          <div class="skill-group reveal"><h3 class="mono">frameworks</h3><ul class="tags"><li>Laravel</li><li>Filament</li></ul></div>
+          <div class="skill-group reveal"><h3 class="mono">databases</h3><ul class="tags"><li>MySQL</li></ul></div>
+          <div class="skill-group reveal"><h3 class="mono">backend</h3><ul class="tags"><li>REST APIs</li><li>Queues and Background Jobs</li><li>System Design</li><li>Database Design</li></ul></div>
+          <div class="skill-group reveal"><h3 class="mono">cloud_and_tools</h3><ul class="tags"><li>AWS S3</li><li>AWS Rekognition</li><li>Git/GitHub</li><li>Postman</li><li>Cursor</li></ul></div>
+          <div class="skill-group reveal"><h3 class="mono">platforms</h3><ul class="tags"><li>Windows</li><li>Linux</li></ul></div>
+          <div class="skill-group reveal wide"><h3 class="mono">other</h3><ul class="tags"><li>SOC 2 Compliance</li><li>AI-Assisted Development</li><li>AI Automation</li><li>Cursor Extension Development</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono num">05.</span> Education</h2>
+        <div class="edu-grid">
+          <article class="edu-card reveal">
+            <p class="mono edu-year">2022</p>
+            <h3>B.E.</h3>
+            <p>The Oxford College of Engineering</p>
+            <p class="mono edu-score">CGPA 7.55</p>
+          </article>
+          <article class="edu-card reveal">
+            <p class="mono edu-year">2018</p>
+            <h3>PU</h3>
+            <p>Carmel Pre-University College</p>
+            <p class="mono edu-score">71%</p>
+          </article>
+          <article class="edu-card reveal">
+            <p class="mono edu-year">2016</p>
+            <h3>10th</h3>
+            <p>New Florence English School</p>
+            <p class="mono edu-score">84%</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title reveal"><span class="mono num">06.</span> Contact</h2>
+        <div class="contact-card reveal">
+          <p class="mono prompt"><span class="accent">$</span> echo "Let's build something"</p>
+          <p class="contact-lead">Open to backend roles working with PHP and Laravel. The fastest way to reach me is email.</p>
+          <ul class="contact-list">
+            <li>
+              <span class="mono label">email</span>
+              <a href="mailto:prashanthmt2022@gmail.com">prashanthmt2022@gmail.com</a>
+              <button class="copy-btn mono" data-copy="prashanthmt2022@gmail.com" aria-label="Copy email address">copy</button>
+            </li>
+            <li>
+              <span class="mono label">phone</span>
+              <a href="tel:+919901188833">+91 99011 88833</a>
+              <button class="copy-btn mono" data-copy="9901188833" aria-label="Copy phone number">copy</button>
+            </li>
+            <li>
+              <span class="mono label">linkedin</span>
+              <a href="https://www.linkedin.com/in/1PrashanthC" target="_blank" rel="noopener">linkedin.com/in/1PrashanthC</a>
+            </li>
+            <li class="gh-only" hidden>
+              <span class="mono label">github</span>
+              <a class="gh-link gh-text" href="#" target="_blank" rel="noopener"></a>
+            </li>
+            <li>
+              <span class="mono label">location</span>
+              <span>Bangalore, India</span>
+            </li>
+          </ul>
+          <a class="btn btn-primary" href="mailto:prashanthmt2022@gmail.com">Say hello</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container mono">
+      <p>© <span id="year"></span> Prashanth C · Built with plain HTML, CSS &amp; JS</p>
+    </div>
+  </footer>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal" id="project-modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+      <button class="modal-close" data-close aria-label="Close project details">×</button>
+      <p class="mono modal-company" id="modal-company"></p>
+      <h3 id="modal-title"></h3>
+      <p class="modal-desc" id="modal-desc"></p>
+      <div class="modal-meta">
+        <div><h4 class="mono">environment</h4><ul class="tags small" id="modal-env"></ul></div>
+        <div><h4 class="mono">skills</h4><ul class="tags small" id="modal-skills"></ul></div>
+      </div>
+      <h4 class="mono resp-title">responsibilities</h4>
+      <ul class="bullets" id="modal-resp"></ul>
+    </div>
+  </div>
+
+  <div class="toast mono" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
